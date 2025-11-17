@@ -1,7 +1,7 @@
 export function hero() {
-    return `
+  return `
     <section
-      class="hero text-white rounded-3 shadow-sm p-3 p-lg-5 mt-5 mt-lg-5 mx-3 mx-lg-0"
+      class="hero text-white rounded-3 shadow-sm p-1 mt-1 mx-3 mx-lg-0"
     >
       <div class="container-fluid">
         <div class="swiper hero-swiper">
@@ -17,7 +17,7 @@ export function hero() {
                   <img
                     src="slider-1.png"
                     alt="Slide 1"
-                    class="img-fluid rounded hero-img"
+                    class="img-fluid rounded hero-img w-50"
                   />
                 </div>
               </div>
@@ -37,7 +37,7 @@ export function hero() {
                   <img
                     src="slider-2.png"
                     alt="Slide 2"
-                    class="img-fluid rounded hero-img"
+                    class="img-fluid rounded hero-img w-50"
                   />
                 </div>
               </div>
@@ -57,7 +57,7 @@ export function hero() {
                   <img
                     src="slider-3.png"
                     alt="Slide 3"
-                    class="img-fluid rounded hero-img"
+                    class="img-fluid rounded hero-img w-50"
                   />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function hero() {
                   <img
                     src="slider-4.png"
                     alt="Slide 4"
-                    class="img-fluid rounded hero-img"
+                    class="img-fluid rounded hero-img w-50"
                   />
                 </div>
               </div>
@@ -93,7 +93,7 @@ export function hero() {
       </div>
     </section>
 
-    <div class="hero-icons-wrapper">
+    <div class="hero-icons-wrapper bg-lg-white">
       <div class="hero-icons container text-center mt-4">
         <div class="row g-3 justify-content-center">
           <div

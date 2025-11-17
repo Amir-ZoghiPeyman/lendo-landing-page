@@ -3,6 +3,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import { hero } from "./components/hero.js";
 import { navbar } from "./components/navbar.js";
+import { section01 } from "./components/section-01.js";
 import './styles/custom.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -15,6 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const heroContainer = document.createElement("div");
         heroContainer.innerHTML = hero();
         app.prepend(heroContainer);
+
+        const section01Container = document.createElement("div");
+        section01Container.innerHTML = section01();
+        app.prepend(section01Container);
 
         const swiper = new Swiper('.hero-swiper', {
             loop: true,

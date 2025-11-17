@@ -1,5 +1,21 @@
 @import "bootstrap/scss/functions";
 
+
+.navbar-sticky {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: #fff !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease;
+}
+
+body {
+  padding-top: 70px;
+}
+
 .hero-icons-wrapper {
   width: 100%;
   background-color: #f8f9fa;

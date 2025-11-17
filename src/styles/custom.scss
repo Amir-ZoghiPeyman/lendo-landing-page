@@ -1,0 +1,14 @@
+@import "bootstrap/scss/functions";
+
+$custom-colors: (
+  "brand": #0b2c6e,
+);
+
+@import "bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/bootstrap";

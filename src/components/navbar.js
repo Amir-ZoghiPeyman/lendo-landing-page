@@ -1,5 +1,5 @@
-export function renderHeader() {
-  const header = `
+export function navbar() {
+  return `
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-between w-100">
@@ -153,6 +153,4 @@ export function renderHeader() {
       </div>
     </nav>
     `
-
-  return header;
 }

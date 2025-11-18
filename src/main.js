@@ -7,6 +7,7 @@ import { navbar } from "./components/navbar.js";
 import { section01 } from "./components/section-01.js";
 import './styles/custom.scss';
 import { faq } from "./components/faq.js";
+import { section02 } from "./components/section-02.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const app = document.getElementById("app");
@@ -23,6 +24,10 @@ document.addEventListener("DOMContentLoaded", () => {
         faqContainer.innerHTML = faq();
         app.prepend(faqContainer);
 
+        const section02Container = document.createElement("div");
+        section02Container.innerHTML = section02();
+        app.prepend(section02Container);
+
         const section01Container = document.createElement("div");
         section01Container.innerHTML = section01();
         app.prepend(section01Container);
@@ -30,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const heroContainer = document.createElement("div");
         heroContainer.innerHTML = hero();
         app.prepend(heroContainer);
+
 
 
 

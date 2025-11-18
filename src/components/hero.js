@@ -99,28 +99,28 @@ export function hero() {
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="public/hero-i-2.svg" alt="" class="hero-icon-img" />
+            <img src="hero-i-2.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">بدون چک و ضامن</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="public/hero-i-1.svg" alt="" class="hero-icon-img" />
+            <img src="hero-i-1.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">فرایند کاملا آنلاین</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="public/hero-i-4.svg" alt="" class="hero-icon-img" />
+            <img src="hero-i-4.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">ارائه وام در کارت خرید</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="public/hero-i-3.svg" alt="" class="hero-icon-img" />
+            <img src="hero-i-3.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">پوشش کل کشور</p>
           </div>
         </div>

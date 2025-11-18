@@ -1,6 +1,7 @@
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import { footer } from "./components/footer.js";
 import { hero } from "./components/hero.js";
 import { navbar } from "./components/navbar.js";
 import { section01 } from "./components/section-01.js";
@@ -13,13 +14,19 @@ document.addEventListener("DOMContentLoaded", () => {
         navContainer.innerHTML = navbar();
         app.prepend(navContainer);
 
-        const heroContainer = document.createElement("div");
-        heroContainer.innerHTML = hero();
-        app.prepend(heroContainer);
+        const footerContainer = document.createElement("div");
+        footerContainer.innerHTML = footer();
+        app.prepend(footerContainer);
 
         const section01Container = document.createElement("div");
         section01Container.innerHTML = section01();
         app.prepend(section01Container);
+
+        const heroContainer = document.createElement("div");
+        heroContainer.innerHTML = hero();
+        app.prepend(heroContainer);
+
+
 
         const swiper = new Swiper('.hero-swiper', {
             loop: true,

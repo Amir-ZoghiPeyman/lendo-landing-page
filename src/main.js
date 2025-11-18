@@ -4,6 +4,7 @@ import 'swiper/css/bundle';
 import { faq } from "./components/faq.js";
 import { footer } from "./components/footer.js";
 import { hero } from "./components/hero.js";
+import { loanCalculator } from "./components/loanCalculator.js";
 import { navbar } from "./components/navbar.js";
 import { section01 } from "./components/section-01.js";
 import { section02 } from "./components/section-02.js";
@@ -27,6 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const section02Container = document.createElement("div");
         section02Container.innerHTML = section02();
         app.prepend(section02Container);
+
+        const loanCalculatorContainer = document.createElement("div");
+        loanCalculatorContainer.innerHTML = loanCalculator();
+        app.prepend(loanCalculatorContainer);
 
         const section01Container = document.createElement("div");
         section01Container.innerHTML = section01();
@@ -70,6 +75,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 prevEl: '.swiper-button-prev',
             },
         });
+        const loanCalculatorSwiper = new Swiper('.loan-swiper', {
+            direction: 'vertical',
+            loop: true,
+            speed: 600,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            allowTouchMove: false,
+            draggable: false,
+            navigation: false,
+            pagination: false,
+            scrollbar: false,
+        });
+
     }
 
 

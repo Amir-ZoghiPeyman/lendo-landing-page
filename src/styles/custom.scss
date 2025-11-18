@@ -1,5 +1,10 @@
 @import "bootstrap/scss/functions";
 
+.loan-swiper {
+  height: 60px;
+  overflow: hidden;
+}
+
 @media (min-width: 992px) {
   .section-swiper .swiper-slide {
     display: flex;

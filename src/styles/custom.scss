@@ -1,5 +1,22 @@
 @import "bootstrap/scss/functions";
 
+@media (min-width: 992px) {
+  .section-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .section-swiper .swiper-slide img {
+    max-width: 350px;
+  }
+
+  .section-swiper .swiper-slide > div {
+    flex: 1;
+  }
+}
+
 .icon-lg {
   width: 40px;
   height: 40px;

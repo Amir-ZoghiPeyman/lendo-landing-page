@@ -1,13 +1,13 @@
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import { faq } from "./components/faq.js";
 import { footer } from "./components/footer.js";
 import { hero } from "./components/hero.js";
 import { navbar } from "./components/navbar.js";
 import { section01 } from "./components/section-01.js";
-import './styles/custom.scss';
-import { faq } from "./components/faq.js";
 import { section02 } from "./components/section-02.js";
+import './styles/custom.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
     const app = document.getElementById("app");
@@ -36,10 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         heroContainer.innerHTML = hero();
         app.prepend(heroContainer);
 
-
-
-
-        const swiper = new Swiper('.hero-swiper', {
+        const heroSwiper = new Swiper('.hero-swiper', {
             loop: true,
             autoplay: {
                 delay: 5000,
@@ -54,5 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 prevEl: '.swiper-button-prev',
             },
         });
+
+        const section01Swiper = new Swiper('.section-swiper', {
+            loop: true,
+
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     }
+
+
 });

@@ -6,6 +6,7 @@ import { hero } from "./components/hero.js";
 import { navbar } from "./components/navbar.js";
 import { section01 } from "./components/section-01.js";
 import './styles/custom.scss';
+import { faq } from "./components/faq.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const app = document.getElementById("app");
@@ -17,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const footerContainer = document.createElement("div");
         footerContainer.innerHTML = footer();
         app.prepend(footerContainer);
+
+        const faqContainer = document.createElement("div");
+        faqContainer.innerHTML = faq();
+        app.prepend(faqContainer);
 
         const section01Container = document.createElement("div");
         section01Container.innerHTML = section01();

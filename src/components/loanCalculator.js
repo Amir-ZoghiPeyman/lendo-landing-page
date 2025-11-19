@@ -1,6 +1,6 @@
 export function loanCalculator() {
-    return `
-    <section class="container">
+  return `
+    <section class="container my-4" id="loan-container">
       <div>
         <div class="d-flex justify-content-center">
           <p>وام</p>
@@ -29,28 +29,40 @@ export function loanCalculator() {
           </div>
         </div>
       </div>
+
       <div>
-        <div>
-          <p>نمایشگر اقساط</p>
-          <p>قبل از درخواست وام , از جزئیات وام و اقساط ماهانه آن مطلع شوید.</p>
-        </div>
-        <div></div>
-        <div>
-          <div>
-            <p>مدت بازپرداخت:</p>
-          </div>
-          <div>
-            <p>قسط ماهیانه:</p>
-          </div>
-          <div>
-            <p>مجموع بازپرداخت اقساط:</p>
-          </div>
-        </div>
-        <div>
-          <button type="button" class="btn btn-success">Success</button>
-          <p>راهنمای دریافت وام</p>
-        </div>
+        <p>نمایشگر اقساط</p>
+        <p>قبل از درخواست وام , از جزئیات وام و اقساط ماهانه آن مطلع شوید.</p>
       </div>
-    </section>
-    `
+
+      <div class="text-center">
+        <div class="d-flex justify-content-center align-items-center gap-2">
+          <button class="btn btn-outline-secondary" id="loan-minus">-</button>
+
+          <p id="loan-amount" class="fw-bold fs-4 m-0">۲۰ میلیون</p>
+
+          <button class="btn btn-outline-secondary" id="loan-plus">+</button>
+        </div>
+
+        <input
+          type="range"
+          id="loan-range"
+          min="20"
+          max="50"
+          step="5"
+          value="20"
+          class="form-range mt-3"
+        />
+      </div>
+
+      <div class="mt-4">
+        <p class="fw-bold">نمایشگر اقساط</p>
+        <p>هر بار مبلغ را تغییر دهید، اقساط جدید محاسبه می‌شود.</p>
+      </div>
+
+      <div class="mt-3">
+        <p>قسط ماهیانه: <span id="monthly-pay">0</span> میلیون</p>
+        <p>مجموع بازپرداخت: <span id="total-pay">0</span> میلیون</p>
+      </div>
+    </section>`;
 }

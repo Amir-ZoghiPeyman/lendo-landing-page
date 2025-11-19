@@ -11,105 +11,163 @@ import { section02 } from "./components/section-02.js";
 import './styles/custom.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const app = document.getElementById("app");
-    if (app) {
+  const app = document.getElementById("app");
+  if (app) {
 
-        const navContainer = document.createElement("div");
-        navContainer.innerHTML = navbar();
-        app.prepend(navContainer);
+    const navContainer = document.createElement("div");
+    navContainer.innerHTML = navbar();
+    app.prepend(navContainer);
 
-        const footerContainer = document.createElement("div");
-        footerContainer.innerHTML = footer();
-        app.prepend(footerContainer);
+    const footerContainer = document.createElement("div");
+    footerContainer.innerHTML = footer();
+    app.prepend(footerContainer);
 
-        const faqContainer = document.createElement("div");
-        faqContainer.innerHTML = faq();
-        app.prepend(faqContainer);
+    const faqContainer = document.createElement("div");
+    faqContainer.innerHTML = faq();
+    app.prepend(faqContainer);
 
-        const section02Container = document.createElement("div");
-        section02Container.innerHTML = section02();
-        app.prepend(section02Container);
+    const section02Container = document.createElement("div");
+    section02Container.innerHTML = section02();
+    app.prepend(section02Container);
 
-        const loanCalculatorContainer = document.createElement("div");
-        loanCalculatorContainer.innerHTML = loanCalculator();
-        app.prepend(loanCalculatorContainer);
+    const loanCalculatorContainer = document.createElement("div");
+    loanCalculatorContainer.innerHTML = loanCalculator();
+    app.prepend(loanCalculatorContainer);
 
-        /* ---------------------------------------------------
-           📌 اسکریپت اسلایدر و دکمه‌های محاسبه اقساط – همینجاست
-        --------------------------------------------------- */
-        const range = document.getElementById("loan-range");
-        const amountText = document.getElementById("loan-amount");
-        const minus = document.getElementById("loan-minus");
-        const plus = document.getElementById("loan-plus");
-        const monthlyEl = document.getElementById("monthly-pay");
-        const totalEl = document.getElementById("total-pay");
+    const range = document.getElementById("loan-range");
+    const amountText = document.getElementById("loan-amount");
+    const minus = document.getElementById("loan-minus");
+    const plus = document.getElementById("loan-plus");
+    const monthlyEl = document.getElementById("monthly-pay");
+    const totalEl = document.getElementById("total-pay");
 
-        function calculate(value) {
-            const loan = Number(value);
-            const total = loan * 1.13;
-            const monthly = total / 12;
+    function calculate(value) {
+      const loan = Number(value);
+      const total = loan * 1.13;
+      const monthly = total / 12;
 
-            totalEl.textContent = total.toFixed(1);
-            monthlyEl.textContent = monthly.toFixed(1);
-            amountText.textContent = loan + " میلیون";
-        }
+      totalEl.textContent = total.toFixed(1);
+      monthlyEl.textContent = monthly.toFixed(1);
+      amountText.textContent = loan + " میلیون";
+    }
 
-        calculate(range.value);
+    calculate(range.value);
 
-        range.addEventListener("input", e => calculate(e.target.value));
-        minus.addEventListener("click", () => {
-            let val = Number(range.value);
-            if (val > 20) {
-                val -= 5;
-                range.value = val;
-                calculate(val);
-            }
-        });
+    range.addEventListener("input", e => calculate(e.target.value));
+    minus.addEventListener("click", () => {
+      let val = Number(range.value);
+      if (val > 20) {
+        val -= 5;
+        range.value = val;
+        calculate(val);
+      }
+    });
 
-        plus.addEventListener("click", () => {
-            let val = Number(range.value);
-            if (val < 50) {
-                val += 5;
-                range.value = val;
-                calculate(val);
-            }
-        });
-        /* --------------------------------------------------- */
+    plus.addEventListener("click", () => {
+      let val = Number(range.value);
+      if (val < 50) {
+        val += 5;
+        range.value = val;
+        calculate(val);
+      }
+    });
+
+    const section01Container = document.createElement("div");
+    section01Container.innerHTML = section01();
+    app.prepend(section01Container);
+
+    const stepsData = {
+      1: {
+        title: "اعتبارسنجی",
+        text: "ابتدا لازم است با انجام اعتبارسنجی بانکی، رتبه اعتباری خود را بررسی کنید. این رتبه به شما نشان می‌دهد که شرایط دریافت وام لندو را دارید و با توجه به آن، مشخص می‌شود که کدام وام‌ها برای شما قابل دریافت هستند.",
+        image: "section-01-step-1.png"
+      },
+      2: {
+        title: "درخواست وام",
+        text: "مبلغ وام و مدت بازپرداخت را انتخاب و درخواست وام خود را ثبت کنید.",
+        image: "section-01-step-2.png"
+      },
+      3: {
+        title: "بارگذاری مدارک",
+        text: "این مرحله باید وارد حساب کاربری‌ خود شوید و مدارک‌ لازم را بارگذاری کنید. بعد از بارگذاری مدارک، وارد مرحله اعتبارسنجی اولیه بانک می‌شوید.",
+        image: "section-01-step-3.png"
+      },
+      4: {
+        title: "ثبت امضای الکترونیکی",
+        text: "از طریق نرم‌افزار آینده ساین، امضای الکترونیکی خود را ثبت کنید. با این امضا می‌توانید سفته الکترونیکی و قراردادهای لندو و بانک را به‌صورت آنلاین امضا کنید.",
+        image: "section-01-step-4.png"
+      },
+      5: {
+        title: "صدور سفته الکترونیکی",
+        text: "حالا باید از لندو سفته الکترونیکی تهیه کرده و آن را امضا کنید. پس از تهیه سفته از لندو، آن را در آینده ساین امضا کنید.",
+        image: "section-01-step-5.png"
+      },
+      6: {
+        title: "امضای قراردادها",
+        text: "بعد از اینکه سفته شما توسط لندو بررسی و تأیید شد، نوبت به مرحله امضای قرارداد می‌رسد. شما باید با امضای الکترونیکی خود، قراردادهای لندو و بانک را به‌شکل آنلاین امضا کنید.",
+        image: "section-01-step-6.png"
+      },
+      7: {
+        title: "تایید نهایی بانک و دریافت وام",
+        text: "در این مرحله درخواست وام شما توسط بانک نهایی می‌شود و وام لندو در قالب «وام کارت» در اختیارتان قرار می‌گیرد. حالا می‌توانید با وام خود خرید انواع کالا را از فروشگاه‌های طرف قرارداد انجام دهید و سپس اقساط آن را به لندو پرداخت کنید.",
+        image: "section-01-step-7.png"
+      }
+    };
+
+    const stepTitle = document.getElementById("step-title");
+    const stepText = document.getElementById("step-text");
+    const stepImage = document.getElementById("step-image");
+    const stepEls = document.querySelectorAll(".step");
+    const pagination = document.querySelector(".pagination");
+
+    function showStep(id) {
+      const data = stepsData[id];
+      stepTitle.textContent = data.title;
+      stepText.textContent = data.text;
+      stepImage.src = data.image;
+
+      stepEls.forEach(s => s.classList.remove("active"));
+      document.querySelector(`.step[data-step="${id}"]`).classList.add("active");
+
+      pagination.querySelectorAll("button").forEach(b => b.classList.remove("active"));
+      const pagBtn = pagination.querySelector(`button[data-step="${id}"]`);
+      if (pagBtn) pagBtn.classList.add("active");
+    }
+
+    stepEls.forEach(step => {
+      step.addEventListener("click", () => showStep(step.dataset.step));
+    });
+
+    pagination.innerHTML = Object.keys(stepsData).map(id => `<button data-step="${id}">${id}</button>`).join('');
+    pagination.querySelectorAll("button").forEach(btn => {
+      btn.addEventListener("click", () => showStep(btn.dataset.step));
+    });
+
+    showStep(1);
 
 
-        const section01Container = document.createElement("div");
-        section01Container.innerHTML = section01();
-        app.prepend(section01Container);
+    const heroContainer = document.createElement("div");
+    heroContainer.innerHTML = hero();
+    app.prepend(heroContainer);
 
-        const heroContainer = document.createElement("div");
-        heroContainer.innerHTML = hero();
-        app.prepend(heroContainer);
+    const heroSwiper = new Swiper('.hero-swiper', {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
 
-        const heroSwiper = new Swiper('.hero-swiper', {
-            loop: true,
-            autoplay: { delay: 5000, disableOnInteraction: false },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        });
+    const loanCalculatorSwiper = new Swiper('.loan-swiper', {
+      direction: 'vertical',
+      loop: true,
+      speed: 600,
+      autoplay: { delay: 3000, disableOnInteraction: false },
+      allowTouchMove: false,
+      draggable: false,
+      navigation: false,
+      pagination: false,
+      scrollbar: false,
+    });
 
-        const section01Swiper = new Swiper('.section-swiper', {
-            loop: true,
-            autoplay: { delay: 10000, disableOnInteraction: false },
-            pagination: { el: '.swiper-pagination', clickable: true },
-            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-        });
-
-        const loanCalculatorSwiper = new Swiper('.loan-swiper', {
-            direction: 'vertical',
-            loop: true,
-            speed: 600,
-            autoplay: { delay: 3000, disableOnInteraction: false },
-            allowTouchMove: false,
-            draggable: false,
-            navigation: false,
-            pagination: false,
-            scrollbar: false,
-        });
-
-    } // end if
+  }
 });

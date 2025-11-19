@@ -1,4 +1,15 @@
+@font-face {
+  font-family: "Samim";
+  src: url("src/assets/fonts/Samim.woff2") format("woff2"),
+    url("src/assets/fonts/Samim.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-family-sans-serif: "Samim", sans-serif;
+
 @import "bootstrap/scss/functions";
+@import "bootstrap-icons/font/bootstrap-icons.css";
 
 @import "faq";
 @import "footer";
@@ -8,7 +19,18 @@
 @import "section-01";
 @import "section-02";
 
+body {
+  font-family: "Samim", sans-serif;
+}
+
+$custom-colors: (
+  "primary": #0b2c6e,
+  "primary-bg": #f3f3f3,
+);
+
 @import "bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";

@@ -5,7 +5,7 @@ export function loanCalculator() {
         <div class="d-flex justify-content-center">
           <p>وام</p>
           <img
-            src="./public/loanCalculator/50.png"
+            src="loanCalculator/50.png"
             class="img-fluid"
             alt=""
             style="width: 50px"

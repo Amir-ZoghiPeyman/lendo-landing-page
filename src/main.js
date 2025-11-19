@@ -1,14 +1,14 @@
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-import { faq } from "./components/faq.js";
-import { footer } from "./components/footer.js";
-import { hero } from "./components/hero.js";
-import { loanCalculator } from "./components/loanCalculator.js";
+import { faq } from "./components/faq/faq.js";
+import { footer } from "./components/footer/footer.js";
+import { hero } from "./components/hero/hero.js";
+import { loanCalculator } from "./components/loanCalculator/loanCalculator.js";
 import { navbar } from "./components/navbar/navbar.js";
-import { section01 } from "./components/section-01.js";
-import { section02 } from "./components/section-02.js";
-import './styles/scss/custom.scss';
+import { section01 } from "./components/section-01/section-01.js";
+import { section02 } from "./components/section-02/section-02.js";
+import './styles/scss/main.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
   const app = document.getElementById("app");
@@ -80,37 +80,37 @@ document.addEventListener("DOMContentLoaded", () => {
       1: {
         title: "اعتبارسنجی",
         text: "ابتدا لازم است با انجام اعتبارسنجی بانکی، رتبه اعتباری خود را بررسی کنید. این رتبه به شما نشان می‌دهد که شرایط دریافت وام لندو را دارید و با توجه به آن، مشخص می‌شود که کدام وام‌ها برای شما قابل دریافت هستند.",
-        image: "section-01-step-1.png"
+        image: "section-01/step-1.png"
       },
       2: {
         title: "درخواست وام",
         text: "مبلغ وام و مدت بازپرداخت را انتخاب و درخواست وام خود را ثبت کنید.",
-        image: "section-01-step-2.png"
+        image: "section-01/step-2.png"
       },
       3: {
         title: "بارگذاری مدارک",
         text: "این مرحله باید وارد حساب کاربری‌ خود شوید و مدارک‌ لازم را بارگذاری کنید. بعد از بارگذاری مدارک، وارد مرحله اعتبارسنجی اولیه بانک می‌شوید.",
-        image: "section-01-step-3.png"
+        image: "section-01/step-3.png"
       },
       4: {
         title: "ثبت امضای الکترونیکی",
         text: "از طریق نرم‌افزار آینده ساین، امضای الکترونیکی خود را ثبت کنید. با این امضا می‌توانید سفته الکترونیکی و قراردادهای لندو و بانک را به‌صورت آنلاین امضا کنید.",
-        image: "section-01-step-4.png"
+        image: "section-01/step-4.png"
       },
       5: {
         title: "صدور سفته الکترونیکی",
         text: "حالا باید از لندو سفته الکترونیکی تهیه کرده و آن را امضا کنید. پس از تهیه سفته از لندو، آن را در آینده ساین امضا کنید.",
-        image: "section-01-step-5.png"
+        image: "section-01/step-5.png"
       },
       6: {
         title: "امضای قراردادها",
         text: "بعد از اینکه سفته شما توسط لندو بررسی و تأیید شد، نوبت به مرحله امضای قرارداد می‌رسد. شما باید با امضای الکترونیکی خود، قراردادهای لندو و بانک را به‌شکل آنلاین امضا کنید.",
-        image: "section-01-step-6.png"
+        image: "section-01/step-6.png"
       },
       7: {
         title: "تایید نهایی بانک و دریافت وام",
         text: "در این مرحله درخواست وام شما توسط بانک نهایی می‌شود و وام لندو در قالب «وام کارت» در اختیارتان قرار می‌گیرد. حالا می‌توانید با وام خود خرید انواع کالا را از فروشگاه‌های طرف قرارداد انجام دهید و سپس اقساط آن را به لندو پرداخت کنید.",
-        image: "section-01-step-7.png"
+        image: "section-01/step-7.png"
       }
     };
 

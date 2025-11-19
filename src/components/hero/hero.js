@@ -15,7 +15,7 @@ export function hero() {
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
-                    src="slider-1.png"
+                    src="hero/slider-1.png"
                     alt="Slide 1"
                     class="img-fluid rounded hero-img w-50"
                   />
@@ -35,7 +35,7 @@ export function hero() {
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
-                    src="slider-2.png"
+                    src="hero/slider-2.png"
                     alt="Slide 2"
                     class="img-fluid rounded hero-img w-50"
                   />
@@ -55,7 +55,7 @@ export function hero() {
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
-                    src="slider-3.png"
+                    src="hero/slider-3.png"
                     alt="Slide 3"
                     class="img-fluid rounded hero-img w-50"
                   />
@@ -75,7 +75,7 @@ export function hero() {
                 </div>
                 <div class="col-lg-6 text-center">
                   <img
-                    src="slider-4.png"
+                    src="hero/slider-4.png"
                     alt="Slide 4"
                     class="img-fluid rounded hero-img w-50"
                   />
@@ -99,28 +99,28 @@ export function hero() {
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="hero-i-2.svg" alt="" class="hero-icon-img" />
+            <img src="hero/icon-2.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">بدون چک و ضامن</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="hero-i-1.svg" alt="" class="hero-icon-img" />
+            <img src="hero/icon-1.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">فرایند کاملا آنلاین</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="hero-i-4.svg" alt="" class="hero-icon-img" />
+            <img src="hero/icon-4.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">ارائه وام در کارت خرید</p>
           </div>
 
           <div
             class="bg-white col-6 col-md-3 d-flex flex-column align-items-center"
           >
-            <img src="hero-i-3.svg" alt="" class="hero-icon-img" />
+            <img src="hero/icon-3.svg" alt="" class="hero-icon-img" />
             <p class="mt-2">پوشش کل کشور</p>
           </div>
         </div>

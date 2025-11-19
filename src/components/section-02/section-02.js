@@ -1,5 +1,5 @@
 export function section02() {
-    return `
+  return `
     <section class="container">
       <div class="d-md-flex align-items-center gap-4">
         <div>

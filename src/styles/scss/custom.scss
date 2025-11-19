@@ -1,6 +1,69 @@
 @import "bootstrap/scss/functions";
 @import "navbar";
 
+.steps {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  padding: 10px;
+  transition: transform 0.2s;
+}
+
+.step.active {
+  transform: scale(1.2);
+}
+
+.step .label {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.content-box {
+  text-align: center;
+}
+
+.content-box img {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f0f0f0;
+}
+
+.pagination button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+@media (max-width: 1024px) {
+  .pagination {
+    display: none;
+  }
+}
+
 .loan-swiper {
   height: 60px;
   overflow: hidden;

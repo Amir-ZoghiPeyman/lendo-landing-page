@@ -1,6 +1,6 @@
 export function navbar() {
   return `
-    <nav class="navbar bg-body-tertiary fixed-top">
+      <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-between w-100">
           <!-- Logo -->
@@ -151,6 +151,5 @@ export function navbar() {
           </div>
         </div>
       </div>
-    </nav>
-    `
+    </nav>`
 }

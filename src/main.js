@@ -5,10 +5,10 @@ import { faq } from "./components/faq.js";
 import { footer } from "./components/footer.js";
 import { hero } from "./components/hero.js";
 import { loanCalculator } from "./components/loanCalculator.js";
-import { navbar } from "./components/navbar.js";
+import { navbar } from "./components/navbar/navbar.js";
 import { section01 } from "./components/section-01.js";
 import { section02 } from "./components/section-02.js";
-import './styles/custom.scss';
+import './styles/scss/custom.scss';
 
 document.addEventListener("DOMContentLoaded", () => {
     const app = document.getElementById("app");

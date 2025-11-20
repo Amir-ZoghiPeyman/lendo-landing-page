@@ -1,5 +1,5 @@
 export function faq() {
-    return `
+  return `
     <section class="container my-3">
       <!-- main text -->
       <div class="d-flex flex-column align-items-center mb-2">

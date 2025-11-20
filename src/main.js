@@ -150,7 +150,14 @@ document.addEventListener("DOMContentLoaded", () => {
     heroContainer.innerHTML = hero();
     app.prepend(heroContainer);
 
-    const heroSwiper = new Swiper('.hero-swiper', {
+    const heroSwiperMobile = new Swiper('.hero-swiper-mobile', {
+      loop: true,
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+
+    const heroSwiperDesktop = new Swiper('.hero-swiper-desktop', {
       loop: true,
       autoplay: { delay: 5000, disableOnInteraction: false },
       pagination: { el: '.swiper-pagination', clickable: true },

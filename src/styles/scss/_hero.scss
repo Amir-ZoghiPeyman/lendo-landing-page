@@ -1,47 +1,73 @@
-.hero {
-  background-color: #0d6efd;
-  color: #fff;
-  border-radius: 0.75rem;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-  padding: 1rem;
-  margin: 1rem 1rem;
+.swiper-button-next {
+  color: #ffffff;
+}
+
+.swiper-button-prev {
+  color: #ffffff;
+}
+
+.swiper-pagination-bullet {
+  background: #8d8d8d !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ffffff !important;
+}
+
+.hero-text {
+  font-size: small;
+  font-weight: 600;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.hero-slider-desktop {
+  max-height: 500px;
+}
+
+.hero-slider-desktop {
+  height: 460px;
   overflow: hidden;
+  align-items: center;
+  border-radius: 28px;
+}
 
-  .hero-img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
+.hero-slider-desktop > img {
+  height: 100%;
+  width: 45%;
+  object-fit: contain;
+  padding: 10px;
+}
 
-  @media (min-width: 992px) {
-    padding: 3rem;
-    margin: 0;
-  }
+.hero-slider-desktop > div {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px 40px;
+}
 
-  @media (max-width: 576px) {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
-    padding: 1rem !important;
+.hero-slider-desktop > div img {
+  width: 85%;
+  height: auto;
+}
 
-    .hero-img {
-      max-width: 90%;
-      margin: 0 auto;
-      display: block;
-    }
-  }
+.hero-slider-desktop button {
+  width: fit-content;
+  padding: 10px 32px;
+  font-size: 15px;
+  border-radius: 14px;
+}
 
-  .row {
-    &.flex-lg-row-reverse {
-      align-items: center;
-    }
-
-    .col-lg-6 {
-      margin-bottom: 1rem;
-      text-align: left;
-
-      &.text-lg-end {
-        text-align: right;
-      }
-    }
-  }
+.bg-slider-1,
+.bg-slider-2,
+.bg-slider-3,
+.bg-slider-4 {
+  border-radius: 28px;
+  background-size: cover;
+  background-position: center;
 }

@@ -39,7 +39,7 @@ export function section02() {
       </div>
 
       <!-- banner-mobile -->
-      <div class="bg-primary-bg py-1 d-md-block d-lg-none">
+      <div class="bg-gray-bg py-1 d-md-block d-lg-none">
         <div class="container">
           <a href="#">
             <img

@@ -2,3 +2,26 @@
   height: 60px;
   overflow: hidden;
 }
+
+.loan-text {
+  color: white;
+  font-weight: 900;
+  font-size: larger;
+}
+
+.loan-calc-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(11, 44, 110, 1) 15%,
+    rgb(239, 239, 239) 100%
+  );
+}
+
+#loan-range {
+  direction: ltr;
+}
+@media (min-width: 992px) {
+  #loan-container .container {
+    max-width: 800px;
+  }
+}

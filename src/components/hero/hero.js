@@ -2,7 +2,7 @@ export function hero() {
   return `
     <div class="bg-gray-bg">
       <section>
-        <div class="container-fluid">
+        <div class="container-fluid p-1">
           <!-- mobile slides -->
           <div class="swiper hero-swiper-mobile d-md-none">
             <div class="swiper-wrapper">

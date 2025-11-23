@@ -5,7 +5,7 @@ export function navbar() {
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid p-3">
         <div class="d-flex align-items-center justify-content-between w-100">
-          <!-- Offcanvas toggle button -->
+          <!-- toggle button -->
           <div class="d-flex">
             <button
               class="navbar-toggler border-0 rounded-5 d-md-none"
@@ -86,7 +86,7 @@ export function navbar() {
             </div>
           </div>
 
-          <!-- Desktop menu -->
+          <!-- desktop menu -->
           <ul class="navbar-nav mx-auto d-none d-md-flex flex-row gap-3">
             <li class="nav-item">
               <a href="#" class="text-brand text-decoration-none">لندو</a>
@@ -117,7 +117,7 @@ export function navbar() {
             </li>
           </ul>
 
-          <!-- Login/Register button -->
+          <!-- login/register button -->
           <button
             type="button"
             class="btn btn-outline-primary rounded-5 btn-hover"
@@ -127,7 +127,7 @@ export function navbar() {
           </button>
         </div>
 
-        <!-- Offcanvas (mobile) -->
+        <!-- menu (mobile) -->
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"

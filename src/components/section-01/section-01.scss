@@ -18,15 +18,11 @@
   .steps {
     background-color: #efefef;
   }
-}
 
-@media (min-width: 768px) {
   .image-wrapper {
     width: 40%;
   }
-}
 
-@media (min-width: 768px) {
   .main-text-wrapper {
     width: 50%;
   }
@@ -65,8 +61,6 @@
   cursor: pointer;
   border-radius: 12px;
   padding: 10px;
-  transition: transform 0.2s;
-  cursor: pointer;
 }
 
 .step.active {
@@ -74,7 +68,6 @@
   color: #0d6efd;
   transform: scale(1.2);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transform: scale(1.2);
 }
 
 .step .label {

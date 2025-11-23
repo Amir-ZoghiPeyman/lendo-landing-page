@@ -6,48 +6,48 @@ export function hero() {
       <section>
         <div class="container-fluid p-1">
           <!-- mobile slides -->
-          <div class="swiper hero-swiper-mobile d-md-none">
+          <div class="swiper hero-swiper d-md-none">
             <div class="swiper-wrapper">
               <!-- 1st slide -->
               <div class="swiper-slide">
-                <a href="">
+                <a href="#">
                   <img
                     class="img-fluid rounded-5 w-100 object-fit-cover"
                     src="hero/slider-1-mobile.svg"
-                    alt=""
+                    alt="pelekani-img"
                   />
                 </a>
               </div>
 
               <!-- 2nd slide -->
               <div class="swiper-slide">
-                <a href="">
+                <a href="#">
                   <img
                     class="img-fluid rounded-5 w-100 object-fit-cover"
                     src="hero/slider-2-mobile.svg"
-                    alt=""
+                    alt="lendoland-img"
                   />
                 </a>
               </div>
 
               <!-- 3rd slide -->
               <div class="swiper-slide">
-                <a href="">
+                <a href="##">
                   <img
                     class="img-fluid rounded-5 w-100 object-fit-cover"
                     src="hero/slider-3-mobile.svg"
-                    alt=""
+                    alt="ref-text"
                   />
                 </a>
               </div>
 
               <!-- 4th slide -->
               <div class="swiper-slide">
-                <a href="">
+                <a href="#">
                   <img
                     class="img-fluid rounded-5 w-100 object-fit-cover"
                     src="hero/slider-4-mobile.svg"
-                    alt=""
+                    alt="loan-text"
                   />
                 </a>
               </div>
@@ -59,7 +59,7 @@ export function hero() {
         </div>
 
         <!-- desktop slides -->
-        <div class="swiper hero-swiper-desktop d-none d-md-block mt-3">
+        <div class="swiper hero-swiper d-none d-md-block mt-3">
           <div class="swiper-wrapper">
             <div
               class="swiper-slide d-flex flex-row-reverse hero-slider-desktop bg-slider-1"

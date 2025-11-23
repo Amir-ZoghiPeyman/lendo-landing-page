@@ -10,6 +10,7 @@ export function section01() {
           <div
             class="steps d-flex flex-wrap justify-content-center gap-3 my-4 rounded-4"
           >
+            // step 1
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="1"
@@ -19,7 +20,8 @@ export function section01() {
               </div>
               <div class="label small mt-1">مرحله ١</div>
             </div>
-
+            
+            // step 2
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="2"
@@ -30,6 +32,7 @@ export function section01() {
               <div class="label small mt-1">مرحله ٢</div>
             </div>
 
+            // step 3
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="3"
@@ -40,6 +43,7 @@ export function section01() {
               <div class="label small mt-1">مرحله ٣</div>
             </div>
 
+            // step 4
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="4"
@@ -50,6 +54,7 @@ export function section01() {
               <div class="label small mt-1">مرحله ۴</div>
             </div>
 
+            // step 5
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="5"
@@ -60,6 +65,7 @@ export function section01() {
               <div class="label small mt-1">مرحله ۵</div>
             </div>
 
+            // step 6
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="6"
@@ -70,6 +76,7 @@ export function section01() {
               <div class="label small mt-1">مرحله ۶</div>
             </div>
 
+            // step 7
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="7"

@@ -1,3 +1,4 @@
+// mock data
 const stepsData = {
     1: {
         title: "اعتبارسنجی",
@@ -43,6 +44,7 @@ const stepsData = {
     }
 };
 
+// main function
 export function section01Logic() {
     const stepTitle = document.getElementById("step-title");
     const stepText = document.getElementById("step-text");
@@ -51,13 +53,16 @@ export function section01Logic() {
     const stepEls = document.querySelectorAll(".step");
     const pagination = document.querySelector(".pagination");
 
+
     function showStep(id) {
+        // sets datas
         const data = stepsData[id];
         stepTitle.textContent = data.title;
         stepText.textContent = data.text;
         stepLink.textContent = data.link;
         stepImage.src = data.image;
 
+        // shows the current step
         stepEls.forEach(s => s.classList.remove("active"));
         document.querySelector(`.step[data-step="${id}"]`).classList.add("active");
 
@@ -66,10 +71,12 @@ export function section01Logic() {
         if (pagBtn) pagBtn.classList.add("active");
     }
 
+    // shows current step's data
     stepEls.forEach(step => {
         step.addEventListener("click", () => showStep(step.dataset.step));
     });
 
+    // pagination logic
     pagination.innerHTML = Object.keys(stepsData)
         .map(id => `<button data-step="${id}"></button>`)
         .join('');
@@ -77,7 +84,6 @@ export function section01Logic() {
     pagination.querySelectorAll("button").forEach(btn => {
         btn.addEventListener("click", () => showStep(btn.dataset.step));
     });
-
 
     showStep(1);
 }

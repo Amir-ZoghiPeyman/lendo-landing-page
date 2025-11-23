@@ -22,9 +22,6 @@
   );
 }
 
-#loan-range {
-  direction: ltr;
-}
 @media (min-width: 992px) {
   #loan-container .container {
     max-width: 800px;
@@ -32,6 +29,7 @@
 }
 
 #loan-range {
+  direction: ltr;
   width: 100%;
   height: 8px;
   border-radius: 4px;

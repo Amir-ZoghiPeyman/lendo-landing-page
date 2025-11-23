@@ -1,3 +1,5 @@
+import "./hero.scss"
+
 export function hero() {
   return `
     <div class="gray-bg">

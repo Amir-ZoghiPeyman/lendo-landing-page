@@ -1,3 +1,5 @@
+import "./section-02.scss"
+
 export function section02() {
   return `
     <section class="my-5">

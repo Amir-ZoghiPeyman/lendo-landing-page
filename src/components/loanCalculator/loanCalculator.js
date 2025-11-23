@@ -1,3 +1,5 @@
+import "./loanCalculator.scss"
+
 export function loanCalculator() {
   return `
     <section class="bg-gray-bg p-4 my-4" id="loan-container">

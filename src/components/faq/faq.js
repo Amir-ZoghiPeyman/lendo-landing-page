@@ -1,3 +1,5 @@
+import "./faq.scss"
+
 export function faq() {
   return `
     <section class="container my-3">

@@ -1,3 +1,5 @@
+import "./navbar.scss"
+
 export function navbar() {
   return `
     <nav class="navbar bg-body-tertiary fixed-top">

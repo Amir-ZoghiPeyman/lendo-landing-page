@@ -1,3 +1,5 @@
+import "./footer.scss"
+
 export function footer() {
   return `
     <div class="gray-bg p-1 pb-4">

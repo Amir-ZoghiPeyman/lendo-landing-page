@@ -1,3 +1,5 @@
+import "./section-01.scss"
+
 export function section01() {
   return `
     <div class="container">

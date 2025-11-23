@@ -1,10 +1,12 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle'
 
+// produce persian numbers
 export function toFarsi(num) {
     return num.toLocaleString("fa-IR");
 }
 
+// main function
 export function loanCalculatorLogic() {
     const range = document.getElementById("loan-range");
     const minus = document.getElementById("loan-minus");
@@ -14,12 +16,14 @@ export function loanCalculatorLogic() {
     const totalEl = document.getElementById("total-pay");
     const progressBar = range;
 
+    // numbers skeleton
     function showSkeleton() {
         const skeletonHTML = `<div style="width:80px; height:20px; background-color:#e0e0e0; border-radius:4px;"></div>`;
         monthlyEl.innerHTML = skeletonHTML;
         totalEl.innerHTML = skeletonHTML;
     }
 
+    // calculator
     function calculate(value) {
         const loan = Number(value);
         const loanTomans = loan * 1_000_000;
@@ -37,6 +41,7 @@ export function loanCalculatorLogic() {
         amountText.textContent = toFarsi(loanTomans) + " تومان";
     }
 
+    // calculate and updates progress bar
     function updateFill() {
         const min = +progressBar.min;
         const max = +progressBar.max;
@@ -44,14 +49,17 @@ export function loanCalculatorLogic() {
         const percent = ((val - min) / (max - min)) * 100;
         progressBar.style.background = `linear-gradient(to right, #28a745 0%, #28a745 ${percent}%, #e5e5e5 ${percent}%, #e5e5e5 100%)`;
     }
-
     calculate(range.value);
     range.addEventListener("input", e => { calculate(e.target.value); updateFill(); });
+
+    // minus function
     minus.addEventListener("click", () => {
         let val = Number(range.value);
         if (val > 20) { val -= 5; range.value = val; calculate(val); }
         updateFill();
     });
+
+    // plus function
     plus.addEventListener("click", () => {
         let val = Number(range.value);
         if (val < 50) { val += 5; range.value = val; calculate(val); }
@@ -59,6 +67,7 @@ export function loanCalculatorLogic() {
     });
     updateFill();
 
+    // swiper logic
     const loanCalculatorSwiper = new Swiper('.loan-swiper', {
         direction: 'vertical',
         loop: true,

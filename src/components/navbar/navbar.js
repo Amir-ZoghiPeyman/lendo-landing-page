@@ -5,9 +5,21 @@ export function navbar() {
     <nav class="navbar bg-body-tertiary fixed-top">
       <div class="container-fluid p-3">
         <div class="d-flex align-items-center justify-content-between w-100">
-          <div class="d-flex flex-row-reverse gap-4">
+          <!-- toggle button -->
+          <div class="d-flex">
+            <button
+              class="navbar-toggler border-0 rounded-5 d-md-none"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
             <!-- Logo -->
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center gap-4">
               <svg
                 class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium Logo lendo-css-vubbuv"
                 focusable="false"
@@ -72,28 +84,50 @@ export function navbar() {
                 ></path>
               </svg>
             </div>
-
-            <!-- Offcanvas toggle button -->
-            <button
-              class="navbar-toggler border-0 rounded-5"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
           </div>
 
-          <!-- Login/Register button -->
-          <button type="button" class="btn btn-outline-primary rounded-5 btn-hover">
-            <span class="d-none d-md-inline"> ورود/ثبت نام</span
-            ><span class="d-md-none">چطور وام بگیرم؟</span>
+          <!-- desktop menu -->
+          <ul class="navbar-nav mx-auto d-none d-md-flex flex-row gap-3">
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none">لندو</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none"
+                >چطور وام بگیرم؟</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none"
+                >اعتبار سنجی</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none">فروشگاه ها</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none"
+                >ثبت فروشگاه</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none">راهنما</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="text-brand text-decoration-none">بلاگ</a>
+            </li>
+          </ul>
+
+          <!-- login/register button -->
+          <button
+            type="button"
+            class="btn btn-outline-primary rounded-5 btn-hover"
+          >
+            <span class="d-none d-md-inline"> ورود/ثبت نام</span>
+            <span class="d-md-none">چطور وام بگیرم؟</span>
           </button>
         </div>
 
-        <!-- Offcanvas -->
+        <!-- menu (mobile) -->
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"

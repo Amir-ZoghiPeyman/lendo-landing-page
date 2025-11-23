@@ -28,7 +28,7 @@ export function section02() {
           </p>
 
           <div>
-            <a href="#" class="fw-bolder text-decoration-none section-02-link">
+            <a href="#" class="fw-bolder text-decoration-none d-inline-block align-items-center gap-1">
               <span class="d-inline d-md-none">اطلاعات بیشتر</span>
               <span class="d-none d-md-inline">ورود به لندولند</span>
               <i class="fs-2 bi bi-arrow-left-short"></i>

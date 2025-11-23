@@ -9,7 +9,7 @@ export function footer() {
           class="bg-primary-bg p-3 rounded-4 d-md-flex justify-content-between align-items-center"
         >
           <div class="d-flex gap-2 mb-2 mb-md-0">
-            <!-- svg -->
+            <!-- logo -->
             <svg
               class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium lendo-css-6niobc"
               focusable="false"

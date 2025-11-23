@@ -11,7 +11,7 @@ export function loanCalculator() {
             <img
               src="loanCalculator/50.png"
               class="img-fluid"
-              alt=""
+              alt="50"
               style="width: 50px"
             />
             <p class="loan-text">میلیون تومانی</p>
@@ -119,13 +119,13 @@ export function loanCalculator() {
               </div>
             </div>
 
-            <a href="" class="text-decoration-none">
+            <a href="#" class="text-decoration-none">
               <button type="button" class="btn btn-success p-2 w-100 my-4">
                 درخواست وام
               </button>
             </a>
           </div>
-          <a href="">
+          <a href="#">
             <button
               type="button"
               class="btn btn-light bg-white p-2 w-100 d-md-none"

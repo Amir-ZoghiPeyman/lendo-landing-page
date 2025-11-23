@@ -1,9 +1,76 @@
 .footer-text {
-  font-size: small;
-  font-weight: 600;
+  font-size: medium;
+  font-weight: bold;
 }
 
 .footer-copyright {
-    font-size: smaller;
-    color: gray;
+  font-size: x-small;
+  color: gray;
+}
+
+.accordion-collapse {
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1rem;
+}
+
+.accordion-collapse.show {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.custom-accordion-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  background-color: #f2f2f2;
+  color: #0d6efd;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: right;
+}
+
+.custom-accordion-btn i {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.custom-accordion-btn:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+.accordion-collapse {
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 1rem;
+}
+
+.accordion-collapse.show {
+  max-height: 500px;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .footer-links-copyrights {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-links-copyrights .container {
+    align-items: center;
+  }
+
+  .footer-links-copyrights p {
+    margin-bottom: 0;
+  }
 }

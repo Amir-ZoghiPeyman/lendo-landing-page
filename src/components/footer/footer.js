@@ -1,6 +1,6 @@
 export function footer() {
   return `
-    <div class="bg-gray-bg p-1">
+    <div class="gray-bg p-1 pb-4">
       <footer class="mt-4 container">
         <!-- banner -->
         <div
@@ -52,19 +52,17 @@ export function footer() {
             </svg>
 
             <!-- download links -->
-            <div>
-              <p class="text-white fw-bold">دانلود اپلیکیشن لندو</p>
-            </div>
+            <p class="text-white fw-bold">دانلود اپلیکیشن لندو</p>
           </div>
           <div>
             <div class="d-md-flex gap-2">
-              <div class=""><img src="footer/myket.svg" alt="" /></div>
-              <div class="">
-                <img src="footer/coffe-bazzar.svg" alt="" />
-              </div>
-              <div class="mt-2 mt-md-0">
-                <img src="footer/apple.svg" alt="" />
-              </div>
+              <a><img src="footer/myket.svg" alt="myket" /></a>
+              <a>
+                <img src="footer/coffe-bazzar.svg" alt="coffe-bazzar" />
+              </a>
+              <a>
+                <img src="footer/apple.svg" class="mt-1 mt-md-0" alt="apple" />
+              </a>
             </div>
           </div>
         </div>
@@ -79,27 +77,34 @@ export function footer() {
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
-                class="accordion-button collapsed"
+                class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#acc1"
               >
                 <span class="footer-text text-primary">راهنمای مشتریان</span>
+                <i class="bi bi-chevron-down"></i>
               </button>
             </h2>
             <div id="acc1" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <div class="footer-text text-primary">
-                  <a class="d-block text-decoration-none"
+                <div class="d-flex flex-column gap-3">
+                  <a class="d-block text-decoration-none text-primary" href="#"
                     >آموزش تصویری دریافت وام</a
                   >
-                  <a class="d-block text-decoration-none">راهنما</a>
-                  <a class="d-block text-decoration-none">مدارک لازم</a>
-                  <a class="d-block text-decoration-none">محاسبه اقساط</a>
-                  <a class="d-block text-decoration-none"
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >راهنما</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >مدارک لازم</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >محاسبه اقساط</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
                     >راهنمای امضای الکترونیکی</a
                   >
-                  <a class="d-block text-decoration-none"
+                  <a class="d-block text-decoration-none text-primary" href="#"
                     >راهنمای سفته الکترونیکی</a
                   >
                 </div>
@@ -111,25 +116,36 @@ export function footer() {
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
-                class="accordion-button collapsed"
+                class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#acc2"
               >
                 <span class="footer-text text-primary">لندو</span>
+                <i class="bi bi-chevron-down"></i>
               </button>
             </h2>
             <div id="acc2" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <div class="footer-text text-primary">
-                  <a class="d-block text-decoration-none">درباره ما</a>
-                  <a class="d-block text-decoration-none">داستان لندو!</a>
-                  <a class="d-block text-decoration-none"
+                <div class="d-flex flex-column gap-3">
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >درباره ما</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >داستان لندو!</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
                     >از ایران رنتز تا لندو</a
                   >
-                  <a class="d-block text-decoration-none">فرهنگ ما</a>
-                  <a class="d-block text-decoration-none">مزایای شغلی ما</a>
-                  <a class="d-block text-decoration-none">بلاگ</a>
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >فرهنگ ما</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >مزایای شغلی ما</a
+                  >
+                  <a class="d-block text-decoration-none text-primary" href="#"
+                    >بلاگ</a
+                  >
                 </div>
               </div>
             </div>
@@ -140,18 +156,24 @@ export function footer() {
         <div class="row d-none d-md-flex mt-4">
           <!-- 1st col -->
           <div class="col-md-6">
-            <p class="footer-text text-primary fw-bold mb-2">راهنمای مشتریان</p>
-            <div class="footer-text text-primary">
-              <a class="d-block text-decoration-none"
+            <p class="footer-text text-primary fw-bold mb-4">راهنمای مشتریان</p>
+            <div class="d-flex flex-column gap-3">
+              <a class="d-block text-decoration-none text-primary" href="#"
                 >آموزش تصویری دریافت وام</a
               >
-              <a class="d-block text-decoration-none">راهنما</a>
-              <a class="d-block text-decoration-none">مدارک لازم</a>
-              <a class="d-block text-decoration-none">محاسبه اقساط</a>
-              <a class="d-block text-decoration-none"
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >راهنما</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >مدارک لازم</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >محاسبه اقساط</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
                 >راهنمای امضای الکترونیکی</a
               >
-              <a class="d-block text-decoration-none"
+              <a class="d-block text-decoration-none text-primary" href="#"
                 >راهنمای سفته الکترونیکی</a
               >
             </div>
@@ -159,42 +181,55 @@ export function footer() {
 
           <!-- 2nd col -->
           <div class="col-md-6">
-            <p class="footer-text text-primary fw-bold mb-2">لندو</p>
-            <div class="footer-text text-primary">
-              <a class="d-block text-decoration-none">درباره ما</a>
-              <a class="d-block text-decoration-none">داستان لندو!</a>
-              <a class="d-block text-decoration-none">از ایران رنتز تا لندو</a>
-              <a class="d-block text-decoration-none">فرهنگ ما</a>
-              <a class="d-block text-decoration-none">مزایای شغلی ما</a>
-              <a class="d-block text-decoration-none">بلاگ</a>
+            <p class="footer-text text-primary fw-bold mb-4">لندو</p>
+            <div class="d-flex flex-column gap-3">
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >درباره ما</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >داستان لندو!</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >از ایران رنتز تا لندو</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >فرهنگ ما</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >مزایای شغلی ما</a
+              >
+              <a class="d-block text-decoration-none text-primary" href="#"
+                >بلاگ</a
+              >
             </div>
           </div>
         </div>
+      </footer>
+    </div>
 
-        <!-- links -->
-        <div class="mt-4 d-md-flex justify-content-between align-items-center">
-          <div class="d-flex gap-4">
-            <a href="">
-              <i class="bi bi-instagram text-primary p-2"></i>
-            </a>
-            <a href="">
-              <i class="bi bi-twitter text-primary p-2"></i>
-            </a>
-            <a href="">
-              <i class="bi bi-telegram text-primary p-2"></i>
-            </a>
-            <a href="">
-              <i class="bi bi-linkedin text-primary p-2"></i>
-            </a>
-          </div>
+    <!-- links -->
+    <div class="mt-4 footer-links-copyrights">
+      <div
+        class="container d-md-flex justify-content-between align-items-center"
+      >
+        <!-- icons -->
+        <div
+          class="d-flex justify-content-center justify-content-md-start gap-4 mb-3 mb-md-0"
+        >
+          <a href="#"><i class="bi bi-instagram text-primary p-2"></i></a>
+          <a href="#"><i class="bi bi-twitter text-primary p-2"></i></a>
+          <a href="#"><i class="bi bi-telegram text-primary p-2"></i></a>
+          <a href="#"><i class="bi bi-linkedin text-primary p-2"></i></a>
+        </div>
 
-          <!-- copyrights -->
-          <p class="mt-4 footer-copyright">
-            کلیه حقوق این سایت متعلق به شرکت هوشمند آرمان گستر آریا (لندو) است.
+        <!-- copyrights -->
+        <div class="text-center text-md-start">
+          <p class="footer-copyright">
+            کلیه حقوق این سایت متعلق به شرکت هوشمند آرمان گستر آریا (لندو) |
             Copyrights - Lendo Co. - 1401
           </p>
         </div>
-      </footer>
-    </div> 
-    `
+      </div>
+    </div>
+    `;
 }

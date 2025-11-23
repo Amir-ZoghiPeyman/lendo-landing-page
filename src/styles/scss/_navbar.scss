@@ -1,3 +1,9 @@
 body {
-  padding-top: 70px;
+  padding-top: 60px;
+}
+
+.btn-hover:hover {
+  color: #fff;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }

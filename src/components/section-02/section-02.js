@@ -26,16 +26,16 @@ export function section02() {
           </p>
 
           <div>
-            <a href="" class="fw-bolder text-decoration-none section-02-link">
+            <a href="#" class="fw-bolder text-decoration-none section-02-link">
               <span class="d-inline d-md-none">اطلاعات بیشتر</span>
-              <span class="d-none d-md-inline">ورود به لندو لند</span>
+              <span class="d-none d-md-inline">ورود به لندولند</span>
               <i class="fs-2 bi bi-arrow-left-short"></i>
             </a>
           </div>
         </div>
 
         <!-- image -->
-        <img src="section-02/lendoland.png" class="img-fluid" alt="" />
+        <img src="section-02/lendoland.png" class="img-fluid" alt="lendoland" />
       </div>
 
       <!-- banner-mobile -->
@@ -45,7 +45,7 @@ export function section02() {
             <img
               src="section-02/banner-mobile.jpeg"
               class="img-fluid my-3 rounded-4 d-block d-md-none"
-              alt=""
+              alt="lendo-shop"
             />
           </a>
         </div>
@@ -58,11 +58,11 @@ export function section02() {
             <img
               src="section-02/banner-desktop.jpeg"
               class="img-fluid my-3 rounded-4 d-none d-md-block"
-              alt=""
+              alt="lendo-shop"
             />
           </a>
         </div>
       </div>
     </section>
-    `
+  `;
 }

@@ -3,7 +3,7 @@ export function faq() {
     <section class="container my-3">
       <!-- main text -->
       <div class="d-flex flex-column align-items-center mb-2">
-        <h3 class="text-primary fw-bold fs-1">سوالات پر تکرار</h3>
+        <h3 class="text-primary fw-bold fs-1 mb-">سوالات پر تکرار</h3>
         <p class="text-primary fw-bold d-none d-md-block">
           پاسخ به سوالات شما درباره نحوه دریافت وام خرید کالا
         </p>
@@ -12,19 +12,20 @@ export function faq() {
       <!-- accordions -->
       <div class="accordion accordion-flush">
         <!-- 1st accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseOne"
               aria-expanded="false"
               aria-controls="flush-collapseOne"
             >
-              <span class="faq-text text-primary">
-                چگونه از لندو وام بگیرم؟
-              </span>
+              <span class="footer-text text-primary"
+                >چگونه از لندو وام بگیریم؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -42,19 +43,20 @@ export function faq() {
         </div>
 
         <!-- 2nd accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseTwo"
               aria-expanded="false"
               aria-controls="flush-collapseTwo"
             >
-              <span class="faq-text text-primary">
-                برای دریافت وام لندو چه مدارکی باید داشته باشم؟
-              </span>
+              <span class="footer-text text-primary">
+                برای دریافت وام لندو چه مدارکی باید داشته باشم؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -77,19 +79,20 @@ export function faq() {
         </div>
 
         <!-- 3rd accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseThree"
               aria-expanded="false"
               aria-controls="flush-collapseThree"
             >
-              <span class="faq-text text-primary">
-                «وام کارت» چیست و چطور باید از آن استفاده کنم؟
-              </span>
+              <span class="footer-text text-primary">
+                «وام کارت» چیست و چطور باید از آن استفاده کنم؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -112,19 +115,20 @@ export function faq() {
         </div>
 
         <!-- 4th accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFour"
               aria-expanded="false"
               aria-controls="flush-collapseFour"
             >
-              <span class="faq-text text-primary">
-                تفاوت وام کارت آبی و سفید چیست؟
-              </span>
+              <span class="footer-text text-primary">
+                تفاوت وام کارت آبی و سفید چیست؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -142,19 +146,20 @@ export function faq() {
         </div>
 
         <!-- 5th accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseFive"
               aria-expanded="false"
               aria-controls="flush-collapseFive"
             >
-              <span class="faq-text text-primary">
-                سود وام لندو چقدر است؟
-              </span>
+              <span class="footer-text text-primary">
+                سود وام لندو چقدر است؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -169,19 +174,20 @@ export function faq() {
         </div>
 
         <!-- 6th accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseSix"
               aria-expanded="false"
               aria-controls="flush-collapseSix"
             >
-              <span class="faq-text text-primary">
-                چطور باید سفته الکترونیکی را خریداری کرد؟
-              </span>
+              <span class="footer-text text-primary">
+                چطور باید سفته الکترونیکی را خریداری کرد؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -198,19 +204,20 @@ export function faq() {
         </div>
 
         <!-- 7th accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseSeven"
               aria-expanded="false"
               aria-controls="flush-collapseSeven"
             >
-              <span class="faq-text text-primary">
-                پرداخت اقساط در لندو چگونه است؟
-              </span>
+              <span class="footer-text text-primary">
+                پرداخت اقساط در لندو چگونه است؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -233,19 +240,20 @@ export function faq() {
         </div>
 
         <!-- 8th accordion -->
-        <div class="accordion-item">
+        <div class="accordion-item p-2 rounded-4">
           <h2 class="accordion-header">
             <button
-              class="accordion-button collapsed"
+              class="accordion-button collapsed custom-accordion-btn d-flex justify-content-between"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#flush-collapseEight"
               aria-expanded="false"
               aria-controls="flush-collapseEight"
             >
-              <span class="faq-text text-primary">
-                لندو اقساط من را چطور با بانک تسویه میکند؟
-              </span>
+              <span class="footer-text text-primary">
+                لندو اقساط من را چطور با بانک تسویه میکند؟</span
+              >
+              <i class="bi bi-chevron-down"></i>
             </button>
           </h2>
           <div
@@ -261,12 +269,12 @@ export function faq() {
         </div>
       </div>
 
-      <div class="mt-4">
-        <a href="" class="fw-bolder text-decoration-none section-02-link">
+      <div class="mt-4 d-md-flex flex-row-reverse">
+        <a href="#" class="fw-bolder text-decoration-none section-02-link">
           <span>مشاهده سوالات بیشتر</span>
           <i class="fs-2 bi bi-arrow-left-short"></i>
         </a>
       </div>
     </section>
-    `
+    `;
 }

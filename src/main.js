@@ -41,19 +41,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const monthlyEl = document.getElementById("monthly-pay");
     const totalEl = document.getElementById("total-pay");
 
+
+    function toFarsi(num) {
+      const formatted = num.toLocaleString("fa-IR");
+      return formatted;
+    }
+
+    function showSkeleton() {
+      const skeletonHTML = `<div style="width:80px; height:20px; background-color:#e0e0e0; border-radius:4px;"></div>`;
+
+      monthlyEl.innerHTML = skeletonHTML;
+      totalEl.innerHTML = skeletonHTML;
+    }
+
     function calculate(value) {
       const loan = Number(value);
-      const total = loan * 1.13;
-      const monthly = total / 12;
+      const loanTomans = loan * 1_000_000;
 
-      totalEl.textContent = total.toFixed(1);
-      monthlyEl.textContent = monthly.toFixed(1);
-      amountText.textContent = loan + " میلیون";
+
+      showSkeleton();
+
+      setTimeout(() => {
+        const total = loanTomans * 1.13;
+        const monthly = total / 12;
+
+        totalEl.textContent = toFarsi(Math.round(total));
+        monthlyEl.textContent = toFarsi(Math.round(monthly));
+      }, 1000)
+
+      amountText.textContent = toFarsi(loanTomans) + " تومان";
     }
 
     calculate(range.value);
 
     range.addEventListener("input", e => calculate(e.target.value));
+
     minus.addEventListener("click", () => {
       let val = Number(range.value);
       if (val > 20) {
@@ -61,6 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
         range.value = val;
         calculate(val);
       }
+      updateFill();
     });
 
     plus.addEventListener("click", () => {
@@ -70,7 +93,26 @@ document.addEventListener("DOMContentLoaded", () => {
         range.value = val;
         calculate(val);
       }
+      updateFill();
     });
+
+    const progressBar = document.getElementById("loan-range");
+
+    function updateFill() {
+      const min = +progressBar.min;
+      const max = +progressBar.max;
+      const val = +progressBar.value;
+      const percent = ((val - min) / (max - min)) * 100;
+
+      progressBar.style.background = `linear-gradient(to right,
+    #28a745 0%,
+    #28a745 ${percent}%,
+    #e5e5e5 ${percent}%,
+    #e5e5e5 100%)`;
+    }
+
+    progressBar.addEventListener("input", updateFill);
+    updateFill();
 
     const section01Container = document.createElement("div");
     section01Container.innerHTML = section01();

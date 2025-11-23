@@ -1,7 +1,7 @@
 export function navbar() {
   return `
     <nav class="navbar bg-body-tertiary fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid p-3">
         <div class="d-flex align-items-center justify-content-between w-100">
           <div class="d-flex flex-row-reverse gap-4">
             <!-- Logo -->
@@ -73,7 +73,7 @@ export function navbar() {
 
             <!-- Offcanvas toggle button -->
             <button
-              class="navbar-toggler border-0"
+              class="navbar-toggler border-0 rounded-5"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar"
@@ -85,8 +85,9 @@ export function navbar() {
           </div>
 
           <!-- Login/Register button -->
-          <button type="button" class="btn btn-outline-primary ms-3">
-            ورود/ثبت نام
+          <button type="button" class="btn btn-outline-primary rounded-5 btn-hover">
+            <span class="d-none d-md-inline"> ورود/ثبت نام</span
+            ><span class="d-md-none">چطور وام بگیرم؟</span>
           </button>
         </div>
 
@@ -106,40 +107,40 @@ export function navbar() {
             ></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-2">
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none">لندو</a>
+                <a href="#" class="text-brand text-decoration-none">لندو</a>
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none"
+                <a href="#" class="text-brand text-decoration-none"
                   >چطور وام بگیرم؟</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none"
+                <a href="#" class="text-brand text-decoration-none"
                   >اعتبار سنجی</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none"
+                <a href="#" class="text-brand text-decoration-none"
                   >فروشگاه ها</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none"
+                <a href="#" class="text-brand text-decoration-none"
                   >ثبت فروشگاه</a
                 >
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none">راهنما</a>
+                <a href="#" class="text-brand text-decoration-none">راهنما</a>
               </li>
               <li class="nav-item">
-                <a href="" class="text-brand text-decoration-none">بلاگ</a>
+                <a href="#" class="text-brand text-decoration-none">بلاگ</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
-  `
+    `
 }

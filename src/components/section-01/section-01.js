@@ -2,22 +2,20 @@ export function section01() {
   return `
     <div class="container">
       <div class="d-md-flex justify-content-between my-4">
-        <div class="w-50">
-          <h2 class="mt-4 text-primary section-01-text">
-            مراحل دریافت وام از لندو
-          </h2>
+        <div class="main-text-wrapper">
+          <h2 class="mt-4 text-primary fw-bold">مراحل دریافت وام از لندو</h2>
           <!-- steps -->
           <div
-            class="steps d-flex flex-wrap justify-content-center gap-3 my-4 bg-gray-bg rounded-4"
+            class="steps d-flex flex-wrap justify-content-center gap-3 my-4 rounded-4"
           >
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="1"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 1</div>
+              <div class="label small mt-1">مرحله ١</div>
             </div>
 
             <div
@@ -25,9 +23,9 @@ export function section01() {
               data-step="2"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 2</div>
+              <div class="label small mt-1">مرحله ٢</div>
             </div>
 
             <div
@@ -35,9 +33,9 @@ export function section01() {
               data-step="3"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 3</div>
+              <div class="label small mt-1">مرحله ٣</div>
             </div>
 
             <div
@@ -45,9 +43,9 @@ export function section01() {
               data-step="4"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 4</div>
+              <div class="label small mt-1">مرحله ۴</div>
             </div>
 
             <div
@@ -55,9 +53,9 @@ export function section01() {
               data-step="5"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 5</div>
+              <div class="label small mt-1">مرحله ۵</div>
             </div>
 
             <div
@@ -65,9 +63,9 @@ export function section01() {
               data-step="6"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 6</div>
+              <div class="label small mt-1">مرحله ۶</div>
             </div>
 
             <div
@@ -75,17 +73,19 @@ export function section01() {
               data-step="7"
             >
               <div class="icon fs-1">
-                <i class="bi bi-circle fs-6 fw-semibold d-md-none"></i>
+                <i class="bi bi-circle-fill fs-6 fw-semibold d-md-none"></i>
               </div>
-              <div class="label text-secondary small mt-1">مرحله 7</div>
+              <div class="label small mt-1">مرحله ٧</div>
             </div>
           </div>
 
           <!-- content box -->
           <div class="content-box">
             <div class="flex-grow-1">
-              <h2 id="step-title" class="fw-bold text-primary mb-4"></h2>
-              <p id="step-text"></p>
+              <h2 id="step-title" class="fw-bold text-primary my-4"></h2>
+              <div class="section-01-text">
+                <p id="step-text"></p>
+              </div>
               <a href="" class="fw-bolder text-decoration-none section-02-link">
                 <p id="step-link"></p>
                 <i class="fs-2 bi bi-arrow-left-short"></i>
@@ -115,6 +115,6 @@ export function section01() {
           alt=""
         />
       </div>
-    </div>
-  `;
+    </div> 
+    `;
 }

@@ -1,4 +1,63 @@
+@media (max-width: 767px) {
+  .accordion-button .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .accordion-body.faq-text {
+    font-size: 0.7rem;
+    padding: 0.8rem 0.5rem;
+    background-color: transparent;
+  }
+
+  .accordion .accordion-item {
+    background-color: transparent;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+    border: none;
+  }
+
+  .accordion-button.custom-accordion-btn {
+    background-color: transparent;
+    border: none;
+  }
+
+  .accordion-button.custom-accordion-btn:not(.collapsed) {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion .accordion-item {
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    overflow: hidden;
+  }
+
+  .accordion-button.custom-accordion-btn {
+    background-color: #f2f2f2;
+    border: none;
+  }
+
+  .accordion-button.custom-accordion-btn:not(.collapsed) {
+    background-color: #f2f2f2;
+  }
+
+  .accordion-body.faq-text {
+    background-color: #f2f2f2;
+    padding: 1rem;
+  }
+}
+
 .faq-text {
   font-size: small;
-  font-weight: 600;
+  font-weight: 700;
+  word-spacing: 0.1rem;
+  line-height: 2;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  outline: none;
 }

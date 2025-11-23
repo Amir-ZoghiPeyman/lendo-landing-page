@@ -1,24 +1,12 @@
 .section-01-text {
-  font-weight: 900;
-}
-
-.step {
-  transition: transform 0.2s;
-  cursor: pointer;
-}
-
-.step.active {
-  transform: scale(1.2);
+  font-size: small;
+  font-weight: 700;
+  word-spacing: 0.1rem;
+  line-height: 2;
 }
 
 .content-box img {
   width: 200px;
-}
-
-.pagination button.active {
-  background-color: #0d6efd;
-  color: #fff;
-  border-color: #0d6efd;
 }
 
 .content-box.d-md-flex {
@@ -27,8 +15,20 @@
 }
 
 @media (min-width: 768px) {
+  .steps {
+    background-color: #efefef;
+  }
+}
+
+@media (min-width: 768px) {
   .image-wrapper {
     width: 40%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-text-wrapper {
+    width: 50%;
   }
 }
 
@@ -58,4 +58,29 @@
   z-index: 10;
   display: flex;
   gap: 8px;
+}
+
+.step {
+  transition: transform 0.2s, background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.step.active {
+  background-color: white;
+  color: #0d6efd;
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1.2);
+}
+
+.step .label {
+  transition: color 0.2s;
+}
+
+.step:not(.active) .label {
+  color: #6c757d;
 }

@@ -1,5 +1,6 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle'
+import 'swiper/css/bundle';
+import $ from 'jquery';
 
 // produce persian numbers
 export function toFarsi(num) {
@@ -8,19 +9,19 @@ export function toFarsi(num) {
 
 // main function
 export function loanCalculatorLogic() {
-    const range = document.getElementById("loan-range");
-    const minus = document.getElementById("loan-minus");
-    const plus = document.getElementById("loan-plus");
-    const amountText = document.getElementById("loan-amount");
-    const monthlyEl = document.getElementById("monthly-pay");
-    const totalEl = document.getElementById("total-pay");
-    const progressBar = range;
+
+    const $range = $("#loan-range");
+    const $minus = $("#loan-minus");
+    const $plus = $("#loan-plus");
+    const $amountText = $("#loan-amount");
+    const $monthlyEl = $("#monthly-pay");
+    const $totalEl = $("#total-pay");
 
     // numbers skeleton
     function showSkeleton() {
         const skeletonHTML = `<div style="width:80px; height:20px; background-color:#e0e0e0; border-radius:4px;"></div>`;
-        monthlyEl.innerHTML = skeletonHTML;
-        totalEl.innerHTML = skeletonHTML;
+        $monthlyEl.html(skeletonHTML);
+        $totalEl.html(skeletonHTML);
     }
 
     // calculator
@@ -34,38 +35,54 @@ export function loanCalculatorLogic() {
             const total = loanTomans * 1.13;
             const monthly = total / 12;
 
-            totalEl.textContent = toFarsi(Math.round(total));
-            monthlyEl.textContent = toFarsi(Math.round(monthly));
+            $totalEl.text(toFarsi(Math.round(total)));
+            $monthlyEl.text(toFarsi(Math.round(monthly)));
         }, 1000);
 
-        amountText.textContent = toFarsi(loanTomans) + " تومان";
+        $amountText.text(toFarsi(loanTomans) + " تومان");
     }
 
-    // calculate and updates progress bar
+    // update progress background
     function updateFill() {
-        const min = +progressBar.min;
-        const max = +progressBar.max;
-        const val = +progressBar.value;
+        const min = Number($range.attr("min"));
+        const max = Number($range.attr("max"));
+        const val = Number($range.val());
         const percent = ((val - min) / (max - min)) * 100;
-        progressBar.style.background = `linear-gradient(to right, #28a745 0%, #28a745 ${percent}%, #e5e5e5 ${percent}%, #e5e5e5 100%)`;
+
+        $range.css("background", `linear-gradient(to right, #28a745 0%, #28a745 ${percent}%, #e5e5e5 ${percent}%, #e5e5e5 100%)`);
     }
-    calculate(range.value);
-    range.addEventListener("input", e => { calculate(e.target.value); updateFill(); });
 
-    // minus function
-    minus.addEventListener("click", () => {
-        let val = Number(range.value);
-        if (val > 20) { val -= 5; range.value = val; calculate(val); }
-        updateFill();
-    });
-
-    // plus function
-    plus.addEventListener("click", () => {
-        let val = Number(range.value);
-        if (val < 50) { val += 5; range.value = val; calculate(val); }
-        updateFill();
-    });
+    // initial calculate
+    calculate($range.val());
     updateFill();
+
+    // range change
+    $range.on("input", function () {
+        calculate($(this).val());
+        updateFill();
+    });
+
+    // minus
+    $minus.on("click", function () {
+        let val = Number($range.val());
+        if (val > 20) {
+            val -= 5;
+            $range.val(val);
+            calculate(val);
+        }
+        updateFill();
+    });
+
+    // plus
+    $plus.on("click", function () {
+        let val = Number($range.val());
+        if (val < 50) {
+            val += 5;
+            $range.val(val);
+            calculate(val);
+        }
+        updateFill();
+    });
 
     // swiper logic
     const loanCalculatorSwiper = new Swiper('.loan-swiper', {

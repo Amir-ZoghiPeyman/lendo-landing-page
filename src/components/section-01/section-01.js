@@ -19,7 +19,7 @@ export function section01() {
               </div>
               <div class="label small mt-1">مرحله ١</div>
             </div>
-
+          
             <div
               class="step d-flex flex-column align-items-center p-2"
               data-step="2"
